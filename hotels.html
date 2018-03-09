@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-top-logo" href="index.html">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-top-logo" href="index.html">
           <img src="img/top-logo.png" width="138" height="70" alt="Город Седона">
         </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-      <a class="main-welcome">
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="media.html">Фото и видео</a></li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+    <a class="main-welcome">
         <img src="img/filter-background.jpg" width="1200" height="800" alt="background">
       </a>
-    </header>
-    <!-- TODO: добавить чекбоксы -->
-    <main class="container">
-      <h1 class="visually-hidden">Седона</h1>
-        <section class="hotel-search">
-          <div>
-            <h2 class="list__title">Инфраструктура</h2>
-           <ul class="list">
-             <li class="list__item">Бассейн</li>
-             <li class="list__item">Парковка</li>
-             <li class="list__item">WI-FI</li>
-           </ul>
-          </div>
-          <div>
-            <h2 class="list__title">Типа жилья</h2>
-           <ul class="list">
-             <li class="list__item">Гостиница</li>
-             <li class="list__item">Мотель</li>
-             <li class="list__item">Апартаменты</li>
-          </ul>
-          </div>
-        <div>
-          <p>Стоимость в сутки (Р)</p>
-          <!-- <span>от 0 до 3000</span>   ???? -->
-        </div>
-        <div>
-           <h3 class="catalog_title">Найдено: 3</h3>
-           <p class="catalog_text">Сортировка</p>
-          <ul class="catalog">
-              <li class="catalog_sorting">По цене</li>
-              <li class="catalog_sorting">По типу</li>
-              <li class="catalog_sorting">По рейтингу</li>
-          </ul>
-        </div>
-        <div class="hotel">
-          <ul class="items">
-            <li class="items-item">
-              <h3 class="items-title">Amara resort & SPA</h3>
-              <p class="items-price">Гостиница от 4000 Р.</p>
-              <span>Подробнее</span>
-              <span>Забронировать</span>
-              <p class="items-rating">Рейтинг: 8,5</p>
-              <img src="img/hotel.jpg" width="135" height="90" alt="Отель">
-            </li>
-            <li class="items-item">
-              <h3 class="items-title">Desert Quail Inn</h3>
-              <p class="items-price">Мотель от 3000 Р.</p>
-              <span>Подробнее</span>
-              <span>Забронировать</span>
-              <p class="items-rating">Рейтинг: 8,9</p>
-              <img src="img/motel.jpg" width="135" height="90" alt="Мотель">
-            </li>
-            <li class="items-item">
-              <h3 class="items-title">Villas At Poco Diablo</h3>
-              <p class="items-price">Апартаменты от 2000 Р.</p>
-              <span>Подробнее</span>
-              <span>Забронировать</span>
-              <p class="items-rating">Рейтинг: 9,2</p>
-              <img src="img/apartment.jpg" width="135" height="90" alt="Апартаменты">
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <div class="visit">
+  </header>
+  <!-- TODO: добавить чекбоксы -->
+  <main class="container">
+    <h1 class="visually-hidden">Седона</h1>
+    <section class="hotel-search">
+      <div class="filter-group">
+        <h2 class="filter-group__title">Инфраструктура</h2>
+        <ul class="filter-group__list">
+          <li class="filter-group__item">Бассейн</li>
+          <li class="filter-group__item">Парковка</li>
+          <li class="filter-group__item">WI-FI</li>
+        </ul>
+      </div>
+      <div class="filter-group">
+        <h2 class="filter-group__title">Типа жилья</h2>
+        <ul class="filter-group__list">
+          <li class="filter-group__item">Гостиница</li>
+          <li class="filter-group__item">Мотель</li>
+          <li class="filter-group__item">Апартаменты</li>
+        </ul>
+      </div>
+      <div>
+        <p>Стоимость в сутки (Р)</p>
+        <!-- <span>от 0 до 3000</span>   ???? -->
+      </div>
+      <div class="sorting">
+        <h3 class="sorting__title">Найдено: 3</h3>
+        <p class="sorting__text">Сортировка</p>
+        <ul class="sorting__list">
+          <li class="sorting__item">По цене</li>
+          <li class="sorting__item">По типу</li>
+          <li class="catalog__item">По рейтингу</li>
+        </ul>
+      </div>
+      <div class="hotel-choose">
+        <ul class="hotel-choose__list">
+          <li class="hotel-choose__item">
+            <h3 class="hotel-choose__title">Amara resort & SPA</h3>
+            <p class="hotel-choose__price">Гостиница от 4000 Р.</p>
+            <span>Подробнее</span>
+            <span>Забронировать</span>
+            <p class="hotel-choose__rating">Рейтинг: 8,5</p>
+            <img src="img/hotel.jpg" width="135" height="90" alt="Отель">
+          </li>
+          <li class="hotel-choose__item">
+            <h3 class="hotel-choose__title">Desert Quail Inn</h3>
+            <p class="hotel-choose__price">Мотель от 3000 Р.</p>
+            <span>Подробнее</span>
+            <span>Забронировать</span>
+            <p class="hotel-choose__rating">Рейтинг: 8,9</p>
+            <img src="img/motel.jpg" width="135" height="90" alt="Мотель">
+          </li>
+          <li class="hotel-choose__item">
+            <h3 class="hotel-choose__title">Villas At Poco Diablo</h3>
+            <p class="hotel-choose__price">Апартаменты от 2000 Р.</p>
+            <span>Подробнее</span>
+            <span>Забронировать</span>
+            <p class="hotel-choose__rating">Рейтинг: 9,2</p>
+            <img src="img/apartment.jpg" width="135" height="90" alt="Апартаменты">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="visit">
       <p>
         #VISITSEDONA
       </p>
-      </div>
-      <div class="footer-social">
-        <ul>
-          <li>
-            <a class="social-button" href="https://twitter.com/htmlacademy_ru">
+    </div>
+    <div class="footer-social">
+      <ul>
+        <li>
+          <a class="social-button" href="https://twitter.com/htmlacademy_ru">
             <img src="img/twitter.svg" width="17" height="15" alt="twitter">
           </a>
         </li>
-          <li>
-            <a class="social-button" href="https://www.facebook.com/htmlacademy/">
+        <li>
+          <a class="social-button" href="https://www.facebook.com/htmlacademy/">
               <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
             </a>
-          </li>
-          <li>
-            <a class="social-button" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+        </li>
+        <li>
+          <a class="social-button" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
               <img src="img/youtube.svg" width="20" height="16" alt="youtube">
             </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <b>Website by</b>
-        <a href="https://htmlacademy.ru">
+        </li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <b>Website by</b>
+      <a href="https://htmlacademy.ru">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип">
         </a>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
