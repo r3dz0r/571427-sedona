@@ -30,22 +30,41 @@
       <div class="filter-group">
         <h2 class="filter-group__title">Инфраструктура</h2>
         <ul class="filter-group__list">
-          <li class="filter-group__item">Бассейн</li>
-          <li class="filter-group__item">Парковка</li>
-          <li class="filter-group__item">WI-FI</li>
+          <li class="filter-group__item">
+            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="swimming-pool" id="filter-group-swimming-pool" checked>
+            <label for="filter-group-swimming-pool">Бассейн</label>
+          </li>
+          <li class="filter-group__item">
+            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="parking" id="filter-group-parking">
+            <label for="filter-group-parking">Парковка</label>
+          </li>
+          <li class="filter-group__item">
+            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="wifi" id="filter-group-wifi">
+            <label for="filter-group-wifi">WI-FI</label>
+          </li>
         </ul>
       </div>
       <div class="filter-group">
-        <h2 class="filter-group__title">Типа жилья</h2>
+        <h2 class="filter-group__title">Тип жилья</h2>
         <ul class="filter-group__list">
-          <li class="filter-group__item">Гостиница</li>
-          <li class="filter-group__item">Мотель</li>
-          <li class="filter-group__item">Апартаменты</li>
+          <li class="filter-group__item">
+            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="hotel" id="filter-group-hotel" checked>
+            <label for="filter-group-hotel">Гостиница</label>
+          </li>
+          <li class="filter-group__item">
+            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="motel" id="filter-group-motel" checked>
+            <label for="filter-group-motel">Мотель</label>
+          </li>
+          <li class="filter-group__item">
+            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="apartment" id="filter-group-apartment" checked>
+            <label for="filter-group-apartment">Апартаменты</label>
+          </li>
         </ul>
       </div>
-      <div>
-        <p>Стоимость в сутки (Р)</p>
+      <div class="filter-cost">
+        <p class="filter-cost__text">Стоимость в сутки (Р)</p>
         <!-- <span>от 0 до 3000</span>   ???? -->
+        <button class="filter-cost__button" type="button">Показать</button>
       </div>
       <div class="sorting">
         <h3 class="sorting__title">Найдено: 3</h3>
@@ -61,24 +80,24 @@
           <li class="hotel-choose__item">
             <h3 class="hotel-choose__title">Amara resort & SPA</h3>
             <p class="hotel-choose__price">Гостиница от 4000 Р.</p>
-            <span>Подробнее</span>
-            <span>Забронировать</span>
+            <button class="hotel-choose__about" type="button">Подробнее</button>
+            <button class="hotel-choose__reservation" type="button">Забронировать</button>
             <p class="hotel-choose__rating">Рейтинг: 8,5</p>
             <img src="img/hotel.jpg" width="135" height="90" alt="Отель">
           </li>
           <li class="hotel-choose__item">
             <h3 class="hotel-choose__title">Desert Quail Inn</h3>
             <p class="hotel-choose__price">Мотель от 3000 Р.</p>
-            <span>Подробнее</span>
-            <span>Забронировать</span>
+            <button class="hotel-choose__about" type="button">Подробнее</button>
+            <button class="hotel-choose__reservation" type="button">Забронировать</button>
             <p class="hotel-choose__rating">Рейтинг: 8,9</p>
             <img src="img/motel.jpg" width="135" height="90" alt="Мотель">
           </li>
           <li class="hotel-choose__item">
             <h3 class="hotel-choose__title">Villas At Poco Diablo</h3>
             <p class="hotel-choose__price">Апартаменты от 2000 Р.</p>
-            <span>Подробнее</span>
-            <span>Забронировать</span>
+            <button class="hotel-choose__about" type="button">Подробнее</button>
+            <button class="hotel-choose__reservation" type="button">Забронировать</button>
             <p class="hotel-choose__rating">Рейтинг: 9,2</p>
             <img src="img/apartment.jpg" width="135" height="90" alt="Апартаменты">
           </li>
