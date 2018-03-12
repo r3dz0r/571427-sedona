@@ -26,45 +26,47 @@
   <main class="container">
     <h1 class="visually-hidden">Седона</h1>
     <section class="hotel-search">
-      <div class="filter-group">
-        <h2 class="filter-group__title">Инфраструктура</h2>
-        <ul class="filter-group__list">
-          <li class="filter-group__item">
-            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="swimming-pool" id="filter-group-swimming-pool" checked>
-            <label for="filter-group-swimming-pool">Бассейн</label>
-          </li>
-          <li class="filter-group__item">
-            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="parking" id="filter-group-parking">
-            <label for="filter-group-parking">Парковка</label>
-          </li>
-          <li class="filter-group__item">
-            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="wifi" id="filter-group-wifi">
-            <label for="filter-group-wifi">WI-FI</label>
-          </li>
-        </ul>
-      </div>
-      <div class="filter-group">
-        <h2 class="filter-group__title">Тип жилья</h2>
-        <ul class="filter-group__list">
-          <li class="filter-group__item">
-            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="hotel" id="filter-group-hotel" checked>
-            <label for="filter-group-hotel">Гостиница</label>
-          </li>
-          <li class="filter-group__item">
-            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="motel" id="filter-group-motel" checked>
-            <label for="filter-group-motel">Мотель</label>
-          </li>
-          <li class="filter-group__item">
-            <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="apartment" id="filter-group-apartment" checked>
-            <label for="filter-group-apartment">Апартаменты</label>
-          </li>
-        </ul>
-      </div>
-      <div class="filter-cost">
-        <p class="filter-cost__text">Стоимость в сутки (Р)</p>
-        <!-- <span>от 0 до 3000</span>   ???? -->
-        <button class="filter-cost__button" type="button">Показать</button>
-      </div>
+      <form class="hotel-search__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="filter-group">
+          <h2 class="filter-group__title">Инфраструктура</h2>
+          <ul class="filter-group__list">
+            <li class="filter-group__item">
+              <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="swimming-pool" id="filter-group-swimming-pool" checked>
+              <label for="filter-group-swimming-pool">Бассейн</label>
+            </li>
+            <li class="filter-group__item">
+              <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="parking" id="filter-group-parking">
+              <label for="filter-group-parking">Парковка</label>
+            </li>
+            <li class="filter-group__item">
+              <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="wifi" id="filter-group-wifi">
+              <label for="filter-group-wifi">WI-FI</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-group">
+          <h2 class="filter-group__title">Тип жилья</h2>
+          <ul class="filter-group__list">
+            <li class="filter-group__item">
+              <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="hotel" id="filter-group-hotel" checked>
+              <label for="filter-group-hotel">Гостиница</label>
+            </li>
+            <li class="filter-group__item">
+              <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="motel" id="filter-group-motel" checked>
+              <label for="filter-group-motel">Мотель</label>
+            </li>
+            <li class="filter-group__item">
+              <input class="visually-hidden filter-group-input filter-group-input-checkbox" type="checkbox" name="apartment" id="filter-group-apartment" checked>
+              <label for="filter-group-apartment">Апартаменты</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-cost">
+          <p class="filter-cost__text">Стоимость в сутки (Р)</p>
+          <!-- <span>от 0 до 3000</span>   ???? -->
+          <button class="filter-cost__button" type="button">Показать</button>
+        </div>
+      </form>
       <div class="sorting">
         <h3 class="sorting__title">Найдено: 3</h3>
         <p class="sorting__text">Сортировка</p>
