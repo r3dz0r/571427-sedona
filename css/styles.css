@@ -10,17 +10,24 @@ body {
   background-color: #ffffff;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .wrapper {
   margin: 0 auto;
+  padding: 0;
   width: 1200px;
+  /* outline: 1px solid #333; */
 }
 
 a {
@@ -28,14 +35,20 @@ a {
 }
 
 .main-navigation {
+  /* margin: 0px;
+  padding: 0px; */
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+  /* outline: 1px solid #333; */
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  /* outline: 1px solid #333; */
 }
 
 .site-navigation a {
@@ -289,12 +302,12 @@ a {
 }
 
 .site-navigation {
-  margin-top: 17px;
   padding: 0;
   /* outline: 1px solid #333; */
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 17px 72px;
+  justify-content: space-between;
 }
 
 .wrapper {
@@ -302,7 +315,11 @@ a {
 }
 
 .main-top-logo {
-  position: absolute top left;
+  /* margin: 0px;
+  padding: 0px; */
+  position: absolute;
+  top: 0px;
+  left: 531px;
 }
 
 .tagline {
@@ -316,6 +333,17 @@ a {
 }
 
 .reason {
+  outline: 1px solid #333;
+  width: 312px;
+}
+
+.reason__title {
+  /* display: flex;
+  flex-wrap: wrap;
+  min-width: 312px;
+  min-height: 204px; */
+  display: flex;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -324,6 +352,7 @@ a {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  width: auto;
 }
 
 .advantages {
@@ -365,6 +394,22 @@ a {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social__list {
+  list-style: none;
+  display: flex;
+  width: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.visit__text {
+  width: 140px;
+  height: 20px;
 }
 
 .advantages {
