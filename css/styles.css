@@ -732,9 +732,35 @@ a {
   padding: 5px 17px;
 }
 
-.hotel-result__rating {
+.hotel-result__rate {
   margin-left: auto;
   margin-right: 86px;
-  margin-top: 95px;
+  margin-top: 29px;
   height: 20px;
+}
+
+.sorting__catalog {
+  list-style: none;
+  display: flex;
+}
+
+.sorting__icon {
+  margin-left: auto;
+  margin-right: 73px;
+}
+
+.sorting__up-dir {
+  margin-right: 12px;
+}
+
+.hotel-result__star {
+  background-image: url(../img/star.svg);
+  background-size: 18px 17px;
+  background-repeat: repeat-x;
+  width: 71px;
+  height: 17px;
+}
+
+.hotel-result__rating {
+  margin-top: 50px;
 }
