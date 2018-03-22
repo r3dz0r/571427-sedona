@@ -72,15 +72,22 @@ a {
   background-repeat: no-repeat;
 }
 
+.main-banner {
+  margin-top: 19px;
+}
+
 .tagline {
   font-size: 21px;
   line-height: 26px;
+  margin-top: 9px;
+  margin-left: 375px;
 }
 
 .page-subtitle {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+  margin-top: 27px;
 }
 
 .advantages__item {
@@ -202,20 +209,6 @@ a {
   line-height: 21px:
 }
 
-/* .filter-cost__text {
-  font-size: 16px;
-  line-height: 21px;
-} */
-
-/* .filter-cost__button {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  background: none;
-  color: #ffffff; */
-
-}
-
 .sorting {
   text-align: left;
 }
@@ -308,7 +301,8 @@ a {
   /* outline: 1px solid #333; */
   display: flex;
   flex-wrap: wrap;
-  padding: 17px 72px;
+  padding-top: 14px;
+  padding-left: 72px;
   justify-content: space-between;
 }
 
@@ -327,7 +321,6 @@ a {
 .tagline {
   text-align: center;
   width: 450px;
-  margin-left: 380px;
 }
 
 .page-subtitle {
@@ -356,15 +349,30 @@ a {
   align-items: center;
   text-align: center;
   width: auto;
+  margin-top: 37px;
 }
 
 .reason--reverse {
   flex-direction: row-reverse;
-  margin-top: 84px;
+  margin-top: 67px;
 }
 
 .reason__block {
   margin-left: 65px;
+  height: 170px;
+}
+
+.reason__title {
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+.reason__number {
+  margin-top: 23px;
+}
+
+.reason__description {
+  margin-top: 21px;
 }
 
 .reason--reverse .reason__block {
@@ -389,17 +397,37 @@ a {
   /* outline: 1px solid #333; */
   order: 2;
   width: 100%;
-  margin-top: 56px;
+  margin-top: 61px;
+}
+
+.advantages__title {
+  margin-top: 22px;
+}
+
+.advantages__text {
+  margin-top: 25px;
 }
 
 .search {
   text-align: center;
 }
 
+.search__title {
+  margin-top: 93px;
+  margin-bottom: 25px;
+}
+
+.search__info {
+  width: 443px;
+  margin-left: 378px;
+  margin-top: 13px;
+}
+
 .search__popup {
   width: 568px;
   height: 86px;
   text-transform: uppercase;
+  margin-top: 32px;
 }
 
 .search__form {
@@ -410,30 +438,87 @@ a {
 }
 
 .search__item {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  /* background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
   width: 568px;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 44px;
   display: flex;
+  margin-left: 56px;
+  height: 40px;
 }
 
 .search__item label {
   display: block;
-  padding-top: 17px;
+  padding: 0;
+  margin-top: 17px;
 }
 
 .search__item input {
-  font: inherit;
+  /* font: inherit; */
   box-sizing: border-box;
+  margin-left: 35px;
+  border: none;
+  text-transform: uppercase;
+  height: 60px;
+}
+
+.search__item:nth-child(2) {
+  margin-top: 3px;
+}
+
+.search__item:nth-child(2) label {
+  margin-top: 9px;
+}
+
+.search__item:nth-child(2) input {
+  margin-top: 7px;
+  height: 30px;
+  margin-left: 31px;
+}
+
+.search__people input {
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.search__people label {
+  margin: 0;
+  padding: 0;
+}
+
+.search__people:nth-child(2) {
+  margin-left: 1px;
 }
 
 .button__back {
-  margin-left: 17px;
+  margin-left: 48px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 42px;
+  margin-top: -12px;
+}
+
+.button__next {
+  margin-left: 18px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 24px;
 }
 
 .search__people {
-  width: 250px;
+  width: 235px;
+  flex: 0 1 40%;
 }
 
 .search__form {
@@ -481,6 +566,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0px;
+  margin-left: 33px;
 }
 
 .footer-copyright {
@@ -491,14 +577,15 @@ a {
 }
 
 .footer-copyright__contact {
-  margin-right: 8px;
-  margin-top: 6px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .visit__text {
   width: 140px;
   height: 20px;
-  margin-top: 36px;
+  margin-top: 31px;
+  margin-left: 22px;
 }
 
 .advantages__list {
