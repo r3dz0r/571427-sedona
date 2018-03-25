@@ -639,7 +639,7 @@ a {
 
 .main-footer {
   display: flex;
-  margin-top: 15px;
+  margin-top: 9px;
   /* background-color: #cbdda9; */
   /* justify-content: space-around; */
 }
@@ -1131,14 +1131,17 @@ a {
   color: #000;
 }
 
+.hotel-result__star {
+  position: relative;
+}
+
 .hotel-result__star--first-hotel {
   background-image: url(../img/star.svg);
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 388px;
-  left: 1193px;
+  left: 76px;
 }
 
 .hotel-result__star--second-hotel {
@@ -1147,8 +1150,7 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 388px;
-  left: 1170px;
+  left: 53px;
 }
 
 .hotel-result__star--third-hotel {
@@ -1157,8 +1159,7 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 388px;
-  left: 1145px;
+  left: 30px;
 }
 
 .hotel-result__star--fourth-hotel {
@@ -1167,8 +1168,7 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 388px;
-  left: 1121px;
+  left: 6px;
 }
 
 .hotel-result__star--first-motel {
@@ -1177,8 +1177,7 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 539px;
-  left: 1193px;
+  left: 76px;
 }
 
 .hotel-result__star--second-motel {
@@ -1187,8 +1186,7 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 539px;
-  left: 1170px;
+  left: 53px;
 }
 
 .hotel-result__star--third-motel {
@@ -1197,8 +1195,7 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 539px;
-  left: 1145px;
+  left: 30px;
 }
 
 .hotel-result__star--first-apartment {
@@ -1207,8 +1204,7 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 691px;
-  left: 1193px;
+  left: 76px;
 }
 
 .hotel-result__star--second-apartment {
@@ -1217,5 +1213,4 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 691px;
-  left: 1170px;
+  left: 53px;
