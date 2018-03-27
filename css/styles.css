@@ -23,7 +23,7 @@ body {
   overflow: hidden;
 }
 
-.wrapper {
+.site-wrapper {
   margin: 0 auto;
   padding: 0;
   width: 1200px;
@@ -447,6 +447,12 @@ a {
   align-items: flex-start;
   position: absolute;
   background-color: #fff;
+  visibility: visible;
+  /* box-shadow: 0 0 8px rgb(0, 0, 0); */
+}
+
+.search__form--close {
+  visibility: hidden;
 }
 
 .search__calendar {
@@ -1146,4 +1152,22 @@ a {
 
 .search__plus:active svg line {
   stroke: #81b3d2;
+}
+
+.filter-group__checkbox {
+  width: 24px;
+  height: 23px;
+  display: block;
+}
+
+input[type="checkbox"]:checked~label .filter-group__checkbox {
+  background: url("../img/checkbox-on.svg") no-repeat center / cover;
+}
+
+input[type="checkbox"]~label .filter-group__checkbox {
+  background: url("../img/checkbox-off.svg") no-repeat center / cover;
+}
+
+.filter-group__item label {
+  display: flex;
 }
