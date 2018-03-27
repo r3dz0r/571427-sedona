@@ -104,25 +104,29 @@
           <div class="search__container">
             <p class="search__adult">
               <label for="search-adult">Взрослые:</label>
-              <button class="button__back search__minus" type="button"><svg width="15" height="15">
+              <div class="search__block">
+                <button class="button__back search__minus" type="button"><svg width="15" height="15">
                           <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3"/>
                         </svg></button>
-              <input id="search-adult" type="text" name="number" value="" placeholder="2">
-              <button class="button__next search__plus" type="button"><svg width="15" height="15">
+                <input id="search-adult" type="text" name="number" value="" placeholder="2">
+                <button class="button__next search__plus" type="button"><svg width="15" height="15">
                           <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                           <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
                         </svg></button>
+              </div>
             </p>
             <p class="search__child">
               <label for="search-child">Дети:</label>
-              <button class="button__back search__minus" type="button"><svg width="15" height="15">
+              <div class="search__block search__block--margin">
+                <button class="button__back search__minus" type="button"><svg width="15" height="15">
                           <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3"/>
                         </svg></button>
-              <input id="search-child" type="text" name="number" value="" placeholder="0">
-              <button class="button__next search__plus" type="button"><svg width="15" height="15">
+                <input id="search-child" type="text" name="number" value="" placeholder="0">
+                <button class="button__next search__plus" type="button"><svg width="15" height="15">
                           <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                           <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
                         </svg></button>
+              </div>
             </p>
           </div>
           <button class="search__button" type="submit">Найти</button>
@@ -131,12 +135,12 @@
       </section>
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704952.0907838233!2d-112.18523050136511!3d34.83756996935017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1521986053828"
-          width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe>
+          width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
         <!-- <img src="img/map.png" width="1200" height="593" alt="карта Седоны"> -->
       </div>
     </main>
     <footer class="main-footer">
-      <div class="visit">
+      <div class="visit ">
         <p class="visit__text">
           #VISITSEDONA
         </p>
