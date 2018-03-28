@@ -71,7 +71,11 @@ a {
 }
 
 .main-banner {
-  margin-top: 20px;
+  margin-top: 17px;
+}
+
+.container {
+  margin-top: 12px;
 }
 
 .tagline {
@@ -764,7 +768,7 @@ a {
 .filter-cost__price label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 30px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -844,6 +848,19 @@ a {
 .filter-cost__button:hover {
   color: #000000;
   background: #ffffff;
+}
+
+.filter-cost__price .max-price input, .filter-cost__price .min-price input {
+  margin-top: -3px;
+}
+
+.min-price {
+  margin-top: 2px;
+}
+
+.max-price {
+  margin-top: 1px;
+  margin-left: -8px;
 }
 
 /* Конец ползунка */
@@ -1083,28 +1100,28 @@ a {
 
 .hotel-result__star {
   background-image: url(../img/star.svg);
-  background-size: 18px 17px;
+  background-size: 24px 17px;
   height: 17px;
 }
 
 .hotel-result__star--four {
-  width: 73px;
+  width: 93px;
   position: absolute;
   top: 29px;
-  left: 1056px;
+  left: 1036px;
 }
 
 .hotel-result__star--three {
-  width: 55px;
+  width: 70px;
   position: absolute;
-  left: 1074px;
+  left: 1060px;
   top: 30px;
 }
 
 .hotel-result__star--two {
-  width: 36px;
+  width: 46px;
   position: absolute;
-  left: 1092px;
+  left: 1084px;
   top: 31px;
 }
 
@@ -1150,11 +1167,15 @@ a {
   width: 25px;
   height: 25px;
   display: block;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .filter-group__item input[type="checkbox"]:checked~label::before {
   background: url("../img/checkbox-on.svg") no-repeat center / cover;
   width: 30px;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 .filter-group__item label {
@@ -1177,6 +1198,7 @@ a {
   margin-left: 6px;
   background-color: #f2f2f2;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .search-child>.button__back {
@@ -1205,6 +1227,7 @@ a {
   margin-right: 6px;
   background-color: #f2f2f2;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .main-footer {
@@ -1239,6 +1262,10 @@ a {
 }
 
 .filter-group__item-name {
-  margin-left: 11px;
-  margin-top: -2px;
+  margin-top: 1px;
+  margin-left: 6px;
+}
+
+.search__popup, .button__back, .button__next, .search__button, .hotel-result__about, .hotel-result__reservation, .sorting__up-dir, .sorting__down-dir {
+  cursor: pointer;
 }
