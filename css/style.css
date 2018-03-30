@@ -1074,7 +1074,6 @@ input[type="radio"].visually-hidden {
 .footer-social__list {
   list-style: none;
   display: flex;
-  width: 150px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
