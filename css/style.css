@@ -102,13 +102,18 @@ input[type="radio"].visually-hidden {
 /* Домашняя страница */
 
 .main-banner {
-  margin-bottom: 12px;
+  background-image: url("../img/banner.jpg");
+  background-size: 1200px 554px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 554px;
+  background-color: #d3e4ee;
 }
 
 .tagline {
   font-size: 21px;
   line-height: 26px;
-  margin-top: 0px;
+  margin-top: 14px;
   margin-left: 375px;
   text-align: center;
   width: 450px;
@@ -529,6 +534,7 @@ input[type="radio"].visually-hidden {
   background-size: 1200px 473px;
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: #f2f1ef;
 }
 
 /* Страница "Гостиницы" */
@@ -542,7 +548,9 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   display: flex;
   color: #ffffff;
-  min-height: 221px;
+  min-height: 217px;
+  margin-bottom: 4px;
+  background-color: #677887;
 }
 
 .filter-group {
